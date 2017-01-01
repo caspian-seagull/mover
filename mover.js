@@ -36,7 +36,7 @@
         }
     };
     var _this = this;
-    document.body.addEventListener('mousemove', function (e) {
+    window.addEventListener('mousemove', function (e) {
         var mouseRatio = getPositionRatio(e);
         movers.forEach(function (mover) {
             return setMoverStyle(mover, mouseRatio);
