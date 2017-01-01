@@ -1,6 +1,11 @@
 (function initMovers() {
     var movers = [].slice.call(document.querySelectorAll('.js-mover'));
     var getPositionRatio = function getPositionRatio(event) {
+        var W_WIDTH  = window.innerWidth;
+        var W_HEIGHT = window.innerHeight;
+
+        var CENTER = {x: W_WIDTH/2, y: W_HEIGHT/2};
+        
         var Mx = event.clientX;
         var My = event.clientY;
         var kx = (Mx - CENTER.x) / CENTER.x;
