@@ -7,6 +7,9 @@ Moves and rotates elements in window depend on cursor's position
 ```HTML
 <script src="move.min.js"></script>
 
+<!-- Use gsap TweenMax for smooth movement -->
+<script src="TweenMax.min.js"></script>
+
 <span class="js-mover" data-offset="30 20 5 5">
   Content
 <span>
