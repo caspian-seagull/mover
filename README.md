@@ -1,5 +1,6 @@
 # mover.js
 Moves and rotates elements in window depend on cursor's position
+<br />
 [Demo on Codepen](http://codepen.io/dead_seagull/pen/bgbYmX "demo")
 
 ## usage
