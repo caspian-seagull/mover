@@ -28,16 +28,20 @@
         params.dy !== 0 ? transformString += 'translateY(' + params.dy + 'px) ' : null;
         params.rx !== 0 ? transformString += 'rotateX(' + params.ry + 'deg) ' : null;
         params.ry !== 0 ? transformString += 'rotateY(' + params.rx + 'deg) ' : null;
-        if (TweenMax) {
-            TweenMax.to(mover, 0.8, { css: { transform: transformString } });
-        } else {
-            mover.style.transform = transformString;
-            mover.style.webkitTransform = transformString;
-        }
+        
+        window.requestAnimationFrame(function() {
+            if (TweenMax) {
+              TweenMax.to(mover, 0.8, { css: { transform: transformString } });
+            } else {
+              mover.style.transform = transformString;
+              mover.style.webkitTransform = transformString;
+            }
+        });
     };
     var _this = this;
     window.addEventListener('mousemove', function (e) {
         var mouseRatio = getPositionRatio(e);
+      
         movers.forEach(function (mover) {
             return setMoverStyle(mover, mouseRatio);
         });
