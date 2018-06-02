@@ -8,8 +8,7 @@ Moves and rotates elements in window depend on cursor's position
 <!-- Use gsap TweenLite with css plugin for smooth movement -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/CSSPlugin.min.js"></script>
-
-<script src="mover.min.js"></script>
+<script src="https://cdn.rawgit.com/caspian-seagull/mover/8aa8ef36/mover.min.js"></script>
 
 <span class="js-mover" data-offset="30 20 5 5 0.8">
   Content
